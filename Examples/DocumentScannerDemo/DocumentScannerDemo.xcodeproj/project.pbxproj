@@ -1,0 +1,435 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5B0B02000000000000000000 /* DocumentScannerDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0B01000000000000000000 /* DocumentScannerDemoApp.swift */; };
+		5B0B02020000000000000000 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0B01020000000000000000 /* AppRouter.swift */; };
+		5B0B02030000000000000000 /* ScanResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0B01030000000000000000 /* ScanResult.swift */; };
+		5B0B02040000000000000000 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0B01040000000000000000 /* HomeView.swift */; };
+		5B0B02050000000000000000 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0B01050000000000000000 /* HomeViewModel.swift */; };
+		5B0B02060000000000000000 /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0B01060000000000000000 /* ScanView.swift */; };
+		5B0B02070000000000000000 /* ScanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0B01070000000000000000 /* ScanViewModel.swift */; };
+		5B0B02080000000000000000 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0B01080000000000000000 /* ResultView.swift */; };
+		5B0B02090000000000000000 /* ResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0B01090000000000000000 /* ResultViewModel.swift */; };
+		B085A85E2FC04AE200AB890E /* DocumentScanner in Frameworks */ = {isa = PBXBuildFile; productRef = B085A85D2FC04AE200AB890E /* DocumentScanner */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5B0B00010000000000000000 /* DocumentScannerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DocumentScannerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B0B01000000000000000000 /* DocumentScannerDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentScannerDemoApp.swift; sourceTree = "<group>"; };
+		5B0B01010000000000000000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B0B01020000000000000000 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		5B0B01030000000000000000 /* ScanResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanResult.swift; sourceTree = "<group>"; };
+		5B0B01040000000000000000 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		5B0B01050000000000000000 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		5B0B01060000000000000000 /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
+		5B0B01070000000000000000 /* ScanViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewModel.swift; sourceTree = "<group>"; };
+		5B0B01080000000000000000 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		5B0B01090000000000000000 /* ResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5B0B00110000000000000000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B085A85E2FC04AE200AB890E /* DocumentScanner in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5B0B00500000000000000000 = {
+			isa = PBXGroup;
+			children = (
+				5B0B00600000000000000000 /* DocumentScannerDemo */,
+				5B0B00510000000000000000 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5B0B00510000000000000000 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5B0B00010000000000000000 /* DocumentScannerDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5B0B00600000000000000000 /* DocumentScannerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				5B0B00610000000000000000 /* App */,
+				5B0B00620000000000000000 /* Navigation */,
+				5B0B00630000000000000000 /* Models */,
+				5B0B00640000000000000000 /* Screens */,
+			);
+			path = DocumentScannerDemo;
+			sourceTree = "<group>";
+		};
+		5B0B00610000000000000000 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				5B0B01000000000000000000 /* DocumentScannerDemoApp.swift */,
+				5B0B01010000000000000000 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		5B0B00620000000000000000 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				5B0B01020000000000000000 /* AppRouter.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		5B0B00630000000000000000 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5B0B01030000000000000000 /* ScanResult.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5B0B00640000000000000000 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				5B0B00650000000000000000 /* Home */,
+				5B0B00660000000000000000 /* Scan */,
+				5B0B00670000000000000000 /* Result */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		5B0B00650000000000000000 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				5B0B01040000000000000000 /* HomeView.swift */,
+				5B0B01050000000000000000 /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		5B0B00660000000000000000 /* Scan */ = {
+			isa = PBXGroup;
+			children = (
+				5B0B01060000000000000000 /* ScanView.swift */,
+				5B0B01070000000000000000 /* ScanViewModel.swift */,
+			);
+			path = Scan;
+			sourceTree = "<group>";
+		};
+		5B0B00670000000000000000 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				5B0B01080000000000000000 /* ResultView.swift */,
+				5B0B01090000000000000000 /* ResultViewModel.swift */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5B0B00200000000000000000 /* DocumentScannerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B0B00310000000000000000 /* Build configuration list for PBXNativeTarget "DocumentScannerDemo" */;
+			buildPhases = (
+				5B0B00100000000000000000 /* Sources */,
+				5B0B00110000000000000000 /* Frameworks */,
+				5B0B00120000000000000000 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DocumentScannerDemo;
+			packageProductDependencies = (
+				B085A85D2FC04AE200AB890E /* DocumentScanner */,
+			);
+			productName = DocumentScannerDemo;
+			productReference = 5B0B00010000000000000000 /* DocumentScannerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5B0B0B0B0B0B0B0B0B0B0B0B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					5B0B00200000000000000000 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 5B0B00300000000000000000 /* Build configuration list for PBXProject "DocumentScannerDemo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5B0B00500000000000000000;
+			packageReferences = (
+				B085A85C2FC04AE200AB890E /* XCRemoteSwiftPackageReference "DocumentScanner" */,
+			);
+			productRefGroup = 5B0B00510000000000000000 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5B0B00200000000000000000 /* DocumentScannerDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5B0B00120000000000000000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5B0B00100000000000000000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B0B02000000000000000000 /* DocumentScannerDemoApp.swift in Sources */,
+				5B0B02020000000000000000 /* AppRouter.swift in Sources */,
+				5B0B02030000000000000000 /* ScanResult.swift in Sources */,
+				5B0B02040000000000000000 /* HomeView.swift in Sources */,
+				5B0B02050000000000000000 /* HomeViewModel.swift in Sources */,
+				5B0B02060000000000000000 /* ScanView.swift in Sources */,
+				5B0B02070000000000000000 /* ScanViewModel.swift in Sources */,
+				5B0B02080000000000000000 /* ResultView.swift in Sources */,
+				5B0B02090000000000000000 /* ResultViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5B0B00400000000000000000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5B0B00410000000000000000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5B0B00420000000000000000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 97F454CA5Z;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = DocumentScannerDemo/App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.documentscanner.demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5B0B00430000000000000000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 97F454CA5Z;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = DocumentScannerDemo/App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.documentscanner.demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5B0B00300000000000000000 /* Build configuration list for PBXProject "DocumentScannerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B0B00400000000000000000 /* Debug */,
+				5B0B00410000000000000000 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B0B00310000000000000000 /* Build configuration list for PBXNativeTarget "DocumentScannerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B0B00420000000000000000 /* Debug */,
+				5B0B00430000000000000000 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B085A85C2FC04AE200AB890E /* XCRemoteSwiftPackageReference "DocumentScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/thangtc-taka/DocumentScanner.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B085A85D2FC04AE200AB890E /* DocumentScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B085A85C2FC04AE200AB890E /* XCRemoteSwiftPackageReference "DocumentScanner" */;
+			productName = DocumentScanner;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 5B0B0B0B0B0B0B0B0B0B0B0B /* Project object */;
+}

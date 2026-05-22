@@ -1,0 +1,15 @@
+{
+  "originHash" : "8f4225e776126d61e0d70e8a2c5779d62031cfc982135f122c32b8c9a896e075",
+  "pins" : [
+    {
+      "identity" : "documentscanner",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/thangtc-taka/DocumentScanner.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "4026cbc880ef486043de7d13a81b28633ea0820c"
+      }
+    }
+  ],
+  "version" : 3
+}
