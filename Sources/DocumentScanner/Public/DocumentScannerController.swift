@@ -55,6 +55,7 @@ public final class DocumentScannerController: ObservableObject {
         frameTask?.cancel()
         frameTask = nil
         await cameraSession.stop()
+        await detector.reset()
     }
 
     // MARK: - Frame processing loop
@@ -109,6 +110,9 @@ public final class DocumentScannerController: ObservableObject {
             detectedQuad: quad
         )
         scannedDocuments.append(doc)
+        // Reset tracker so the next scan starts with fresh ML detection.
+        await detector.reset()
+        await smoother.reset()
         return doc
     }
 

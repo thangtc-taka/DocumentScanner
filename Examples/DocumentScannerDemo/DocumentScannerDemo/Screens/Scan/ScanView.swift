@@ -9,7 +9,7 @@ struct ScanView: View {
         var config = DocumentScannerConfiguration()
         config.enhancementMode = .blackAndWhite
         config.pageSize = .a4
-        config.smoothingBufferSize = 7
+        config.smoothingBufferSize = 9
         return config
     }()
 
