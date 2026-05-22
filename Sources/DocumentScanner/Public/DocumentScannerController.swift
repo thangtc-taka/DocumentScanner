@@ -74,7 +74,13 @@ public final class DocumentScannerController: ObservableObject {
 
     private func processFrame(_ sampleBuffer: CMSampleBuffer) async {
         let quad = try? await detector.detect(in: sampleBuffer)
-        let (smoothed, stable) = await smoother.process(quad)
+
+        let expandedQuad = quad.map { q in
+            let pageAspectRatio = configuration.pageSize.cgSize.width / configuration.pageSize.cgSize.height
+            return q.expanded(toAspectRatio: pageAspectRatio)
+        }
+
+        let (smoothed, stable) = await smoother.process(expandedQuad)
         detectedQuad = smoothed
         isDocumentStable = stable
     }

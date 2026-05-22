@@ -79,6 +79,38 @@ public struct Quad: Sendable, Equatable {
                 dist(bottomLeft, other.bottomLeft)) / 4.0
     }
 
+    /// Expand quad to match a target aspect ratio (width:height).
+    /// Keeps quad centered and expands outward while staying within [0, 1] bounds.
+    func expanded(toAspectRatio ratio: CGFloat) -> Quad {
+        let bounds = CGRect(x: 0, y: 0, width: 1, height: 1)
+        let center = CGPoint(x: (topLeft.x + bottomRight.x) / 2, y: (topLeft.y + bottomRight.y) / 2)
+
+        let currentWidth = topRight.x - topLeft.x
+        let currentHeight = topLeft.y - bottomLeft.y
+        let currentRatio = currentWidth / currentHeight
+
+        var targetWidth = currentWidth
+        var targetHeight = currentHeight
+
+        if currentRatio < ratio {
+            targetWidth = currentHeight * ratio
+        } else {
+            targetHeight = currentWidth / ratio
+        }
+
+        let expandedLeft = max(0, center.x - targetWidth / 2)
+        let expandedRight = min(1, center.x + targetWidth / 2)
+        let expandedTop = min(1, center.y + targetHeight / 2)
+        let expandedBottom = max(0, center.y - targetHeight / 2)
+
+        return Quad(
+            topLeft: CGPoint(x: expandedLeft, y: expandedTop),
+            topRight: CGPoint(x: expandedRight, y: expandedTop),
+            bottomRight: CGPoint(x: expandedRight, y: expandedBottom),
+            bottomLeft: CGPoint(x: expandedLeft, y: expandedBottom)
+        )
+    }
+
     // MARK: - Default (full-frame fallback)
 
     static let fullPage = Quad(
