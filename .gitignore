@@ -1,0 +1,37 @@
+# Xcode
+#
+# Build artifacts
+build/
+DerivedData/
+
+# Personal settings
+*.xcuserdata
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+!default.mode1v3
+!default.mode2v3
+!default.perspectivev3
+
+# Xcode3 client State
+xcuserdata/
+
+# App Store Connect API keys
+*.p8
+
+# Swift Package Manager
+# Package.resolved
+
+# Carthage
+Carthage/Build/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# Miscellaneous
+.DS_Store
+*.swp
+*~
