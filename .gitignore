@@ -1,10 +1,10 @@
-# Xcode
-#
-# Build artifacts
+# Xcode Build Artifacts
 build/
 DerivedData/
+.build/
+*.xcarchive
 
-# Personal settings
+# Xcode User Settings
 *.xcuserdata
 *.mode1v3
 *.mode2v3
@@ -12,15 +12,14 @@ DerivedData/
 !default.mode1v3
 !default.mode2v3
 !default.perspectivev3
-
-# Xcode3 client State
 xcuserdata/
 
-# App Store Connect API keys
-*.p8
+# Xcode Workspace
+.swiftpm/xcode
 
 # Swift Package Manager
-# Package.resolved
+# Package.resolved (uncomment to version lock)
+.swiftpm/
 
 # Carthage
 Carthage/Build/
@@ -30,8 +29,38 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots/**/*.png
 fastlane/test_output
+fastlane/screenshots/
 
-# Miscellaneous
+# App Store Connect API Keys
+*.p8
+
+# OS
 .DS_Store
+Thumbs.db
+
+# Editor
 *.swp
+*.swo
 *~
+.vim/
+.vscode/
+*.code-workspace
+
+# IDE
+.idea/
+*.iml
+
+# Node (for documentation tools)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Environment
+.env
+.env.local
+.env.*.local
