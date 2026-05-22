@@ -53,7 +53,17 @@ actor CameraSession {
 
         captureSession.commitConfiguration()
 
+        // Rotate video frames to portrait so Vision coordinates match the display orientation.
+        if let conn = videoOutput.connection(with: .video), conn.isVideoOrientationSupported {
+            conn.videoOrientation = .portrait
+        }
+
         previewLayer.session = captureSession
+
+        if let conn = previewLayer.connection, conn.isVideoOrientationSupported {
+            conn.videoOrientation = .portrait
+        }
+
         captureSession.startRunning()
     }
 

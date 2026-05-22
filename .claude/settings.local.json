@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(swift build *)",
+      "Bash(xcodebuild -scheme DocumentScanner -destination 'generic/platform=iOS Simulator' build)",
+      "Bash(xcodebuild -list)",
+      "Bash(xcodebuild -scheme DocumentScannerTests -destination 'platform=iOS Simulator,name=iPhone 16' test)",
+      "Bash(xcodebuild -scheme DocumentScanner -destination 'platform=iOS Simulator,name=iPhone 16' test)",
+      "Bash(xcrun simctl *)",
+      "Bash(xcodebuild -scheme DocumentScanner -destination 'platform=iOS Simulator,id=315882A7-EF72-4056-9B5D-BFC268B4DF69' test)",
+      "Bash(git reset *)",
+      "Bash(git checkout *)",
+      "Bash(git add *)",
+      "Bash(git rm *)",
+      "Bash(git commit -m 'Add QUICKSTART.md: 5-minute setup guide *)",
+      "Bash(git commit -m 'Improve .gitignore and add MIT LICENSE *)",
+      "Bash(git commit -m 'Add CONTRIBUTING.md: Contribution guidelines *)",
+      "Bash(chmod +x /Users/caothang/Developer/iOS/DocumentScanner/Examples/DocumentScannerDemo/setup.sh)"
+    ]
+  }
+}
